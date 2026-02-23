@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+
+{% seo %}
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>Abdelaziz Dabbabi</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <section id="downloads">
+		<img height="25px" style='position: absolute;'loading='lazy' src='https://github.com/azizfcb/azizfcb/raw/gh-pages/CV/pdf-icon.png' />
+	        <a style='margin-left: 32px;' href="{{ '/' | relative_url }}/CV/cv-abdelaziz-dabbabi-FR.pdf" target="_blank">CV Français</a> <span style='color: #b5e853;'>|</span>
+	        <a href="{{ '/' | relative_url }}/CV/cv-abdelaziz-dabbabi-FR.pdf" target="_blank">English Resume</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
